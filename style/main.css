@@ -23,6 +23,7 @@ body {
 .logo-container {
 	margin-left: 22px;
 	padding-top: 2px;
+	width: 750px;
 }
 
 .logo-container #logo,
@@ -32,8 +33,14 @@ body {
 	float: left;
 }
 
+.logo-container a {
+	color: black;
+	text-decoration: none;
+}
+
 .letter,
 .string {
+	position: relative;
 	height: 80px;
 	font-size: 30px;
 	letter-spacing: 2px;
@@ -41,27 +48,125 @@ body {
 	text-align: center;
 	line-height: 80px;
 	margin-top: 3px;
+	z-index: 0;
+	overflow: hidden;
+	transition: all .5s;
+	cursor: pointer;
 }
 
 .letter {
 	width: 40px;
 }
 
+.letter > span {
+	display: none;
+}
+
+.letter::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	transform: translate(100%);
+	z-index: -1;
+	transition: all .5s; 
+}
+
+.letter:nth-child(1)::before {
+	background-color: #00FF43;
+}
+
+.letter:nth-child(2)::before {
+	background-color: #07D0FF;
+}
+
+.letter:nth-child(3)::before {
+	background-color: black;
+}
+
+.letter:nth-child(4)::before {
+	background-color: #FF1E00;
+}
+
+.letter:hover{
+	width: 350px;
+	color: white;
+}
+
+.letter:hover span {
+	display: inline-block;
+}
+
+.letter:hover::before {
+	transform: translate(0);
+	overflow: auto;
+}
+
 .string {
 	width: 140px;
 	background-color: #0EBEFF;
+	height: 80px;
+	
+}
+
+.string::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 140px;
+	height: 80px;
+	background-color: #583fb9;
+	transform: translate(100%);
+	transition: all .5s;
+	z-index: -1;
+}
+
+.string:hover {
+	color: white;
+}
+
+.string:hover::before {
+	transform: translate(0);
+	overflow: auto;
 }
 
 .socialvk {
+	position: relative;
+	width: 500px;
+	height: 80px;
 	float: right;	
 	margin-top: 5px;
 }
 
 .socialvk .icon {
-	margin: 0 15px;
 	border: 2px dashed grey;
 	padding: 10px;
 	border-radius: 50px;
+	transition: all .5s;
+}
+
+.socialvk a {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.socialvk a:nth-child(2) {
+	right: 100px;
+}
+
+.socialvk a:nth-child(3) {
+	right: 200px;
+}
+
+.socialvk a:nth-child(4) {
+	right: 300px;
+}
+
+.socialvk .icon:hover {
+	transform: rotate(360deg);
+	padding: 15px;
 }
 
 .header .menu {
@@ -79,7 +184,7 @@ body {
 .header .menu ul li {
 	display: block;
 	float: left;
-	
+	transition: all 1s ease-in-out;
 }
 
 .header .menu ul li a {
@@ -88,11 +193,13 @@ body {
 	font-size: 20px;
 	color: #157fc4;
 	padding: 10px 20px;
+	transition: all .5s ease-in .4s;
 }
 
 .header .menu .search {
 	width: 60px;
 	margin-left: 20px;
+	transition: none;
 }
 
 .header .menu .search .icon-search {
@@ -101,17 +208,17 @@ body {
 	background: white url(../img/sprite.png) no-repeat;
 	background-position: 0 -40px;
 	margin: 13px auto;
-
+	transition: background-position .5s ease-in;
 }
 
 .header .menu ul li a:hover,
 .header .menu ul li:hover{
-	background-color: #157fc4;
+	background-color: #45a3ba;
 	color: white;
 	cursor: pointer;
 }
 
 .header .menu ul li.search:hover .icon-search {
-	background: #157fc4 url(../img/sprite.png) no-repeat;
+	background: #45a3ba url(../img/sprite.png) no-repeat;
 	background-position: -20px -40px;
 }
