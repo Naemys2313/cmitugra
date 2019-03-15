@@ -237,13 +237,14 @@ body {
 .header .menu .search {
 	width: 60px;
 	margin-left: 20px;
-	transition: none;
+	
+	background-color: white;
 }
 
 .header .menu .search .icon-search {
 	height: 20px;
 	width: 20px;
-	background: white url(../img/sprite.png) no-repeat;
+	background: url(../img/sprite.png) no-repeat;
 	background-position: 0 -40px;
 	margin: 13px auto;
 	transition: background-position .5s ease-in;
@@ -261,7 +262,7 @@ body {
 }
 
 .header .menu > ul > li.search:hover .icon-search {
-	background: #45a3ba url(../img/sprite.png) no-repeat;
+	background: url(../img/sprite.png) no-repeat;
 	background-position: -20px -40px;
 }
 
