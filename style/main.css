@@ -362,7 +362,7 @@ article img{
 	background: url("../img/slider/next.png") no-repeat; 
 	float: right;
 	margin-top: 70px;
-	margin-right: -100px; /*сдвиг вправо*/
+	margin-right: -100px;
 	display: block;
 	height: 60px;
 	width: 60px;
