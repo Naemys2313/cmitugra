@@ -9,9 +9,14 @@ body {
 /* header */
 
 .header {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	height: 165px;
 	padding-top: 55px;
+	background-color: white;
 	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
 }
 
 .container {
@@ -213,14 +218,6 @@ body {
 	left: -20px;
 }
 
-.header .menu > ul .drop-down-menu-second {
-	left: -141px;
-}
-
-.header .menu > ul .drop-down-menu-thirt {
-	left: -262px;
-}
-
 .header .menu > ul ul li {
 	display: block;
 	width: 190px;
@@ -302,6 +299,10 @@ body {
 
 /* slider */
 
+.content {
+	margin-top: 300px;
+}
+
 .all {
 	margin-top: 100px;
 }
@@ -345,6 +346,7 @@ article img{
 	max-width: 100%; 
 }
 
+#switch1:checked ~ #controls label:nth-child(3),
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2) {
 	background: url("../img/slider/prev.png") no-repeat;
@@ -357,6 +359,7 @@ article img{
 	opacity: 0.6;
 }
 
+#switch3:checked ~ #controls label:nth-child(1), 
 #switch1:checked ~ #controls label:nth-child(2), 
 #switch2:checked ~ #controls label:nth-child(3) {
 	background: url("../img/slider/next.png") no-repeat; 
