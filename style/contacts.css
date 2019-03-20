@@ -1,0 +1,55 @@
+.content {
+	height: 100vh;
+}
+
+.content a {
+	text-decoration: none;
+	color: #157fc4;
+}
+
+.left{
+	float: left;
+}
+
+.left ul {
+	list-style: none;
+}
+
+.left li {
+	margin: 10px;
+}
+
+.right {
+	margin-left: 150px;
+	float: left;
+	color: #1c1c1c;
+	font-size: 22px;
+}
+
+.nav {
+	margin-left: -40px;
+	margin-bottom: 40px;
+	font-size: 14px;
+	color: #828282;
+}
+
+.nav a {
+	color: #828282;
+}
+
+.nav a:hover {
+	text-decoration: underline;
+}
+
+.right h1 {
+	font-size: 32px;
+	font-weight: normal;
+}
+
+.right li {
+	font-size: ;
+}
+
+.right .bold {
+	font-weight: bold;
+}
