@@ -1,0 +1,49 @@
+.right {
+	font-size: 16px;
+	color: #666666;
+}
+
+.right .photo_list {
+	list-style-image: url("../img/icons/icon_doc.jpg");
+	margin-left: -10px;
+}
+
+.right .photo_list li {
+	margin: 10px 0;
+}
+
+.anketa_text {
+	margin: 0;
+	margin-bottom: 20px;
+	max-width: 770px;
+	color: #828282;
+}
+
+.anketa_list {
+	margin-left: -20px;
+	color: #828282;
+}
+
+.anketa_list > li {
+	margin-bottom: 20px;
+}
+
+.anketa_list ul {
+	margin-left: -20px;
+}
+
+.anketa_list ul li {
+	list-style-type: "- ";
+}
+
+.right ul a {
+	text-decoration: underline;
+}
+
+.right ul a:hover {
+	text-decoration: none;
+}
+
+.size_file {
+	color: #666666;
+}
