@@ -1,0 +1,15 @@
+.about_cmit_text,
+.about_cmit_list{
+	max-width: 830px;
+	font-size: 16px;
+	color: #828282;
+}
+
+.about_cmit_list {
+	margin-top: -15px;
+}
+
+.about_cmit_table td {
+	text-align: center;
+	max-width: 400px;
+}

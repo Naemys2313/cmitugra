@@ -189,16 +189,14 @@ body {
 	padding: 0;
 }
 
-.header .menu > ul > li,
-.header .menu > ul label li {
+.header .menu > ul > li {
 	display: block;
 	position: relative;
 	float: left;
 	transition: all 1s ease-in-out;
 }
 
-.header .menu > ul > li > a,
-.header .menu > ul label li > a {
+.header .menu > ul > li > a {
 	display: block;
 	text-decoration: none;
 	font-size: 20px;
@@ -240,26 +238,6 @@ body {
 	overflow: hidden;
 }
 
-.header .menu .search input[type="text"] {
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	right: 0px;
-	top: 0;
-	right: -20px;
-	width: 0;
-	height: 100%;
-	border: none;
-	background-color: #45a3ba;
-	box-sizing: border-box;
-	padding-left: 20px;
-	font-size: 20px;
-	color: white;
-	font-weight: bold;
-	letter-spacing: 1px;
-	transition: width 0.4s;
-}
-
 .header .menu .search .icon-search {
 	height: 20px;
 	width: 20px;
@@ -274,9 +252,7 @@ body {
 }
 
 .header .menu > ul > li > a:hover,
-.header .menu > ul > li:hover,
-.header .menu > ul label li > a:hover,
-.header .menu > ul label li:hover{
+.header .menu > ul > li:hover {
 	background-color: #45a3ba;
 	color: white;
 	cursor: pointer;
@@ -285,16 +261,6 @@ body {
 .header .menu > ul li.search:hover .icon-search {
 	background: url(../img/sprite.png) no-repeat;
 	background-position: -20px -40px;
-}
-
-#search-checkbox:checked ~ label .search input[type="text"] {	
-	right: 60px;
-	width: 1120px;	
-} 
-
-#search-checkbox:checked ~ label .search {
-	background-color: #45a3ba;
-	overflow: visible;
 }
 
 /* slider */
