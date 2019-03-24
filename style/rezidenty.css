@@ -1,0 +1,46 @@
+h1 {
+	font-size: 26px;
+	font-weight: normal;
+	text-align: center;
+	color: black;
+}
+
+.rezidenty_table {
+	margin: 0 auto;
+	width: 820px;
+	border: 5px dashed silver;
+	border-collapse: collapse;
+	margin-bottom: 40px;
+}
+
+.rezidenty_table td {
+	width: 50%;
+	height: 430px;
+}
+
+.rezidenty_table td h2 {
+	margin-top: -50px;
+	font-weight: normal;
+	color: black;
+}
+
+.rezidenty_table img {
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: transform 1s;
+	margin-bottom: 20px;
+}
+
+.rezidenty_table img:hover {
+	transform: scale(1.1);
+}
+
+.rezidenty_table td > ul li {
+	list-style-type: none;
+	font-size: 14pt;
+}
+
+.rezidenty_table td > ul > li:before {
+	content: "-";
+}

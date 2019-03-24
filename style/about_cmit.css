@@ -1,0 +1,65 @@
+.about_cmit_text,
+.about_cmit_list{
+	max-width: 830px;
+	font-size: 16px;
+	color: #828282;
+}
+
+.about_cmit_list {
+	margin-top: -15px;
+}
+
+.about_cmit_table {
+	width: 800px;
+}
+
+.about_cmit_table td {
+	text-align: center;
+	max-width: 400px;
+}
+
+.team_table img {
+	height: 450px;
+}
+
+.team_table td {
+	text-align: left;
+	vertical-align: top;
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+}
+
+.team_table td:before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 380px;
+	width: 380px;
+	border-radius: 350px;
+	left: -55px;
+	top: -55px;
+	background-color: blue;
+	opacity: 0.5;
+	transform: scale(0);
+	transition: transform 0.2s;
+}
+
+.team_table td:hover:before {
+	transform: scale(1);
+}
+
+.team_table span {
+	position: absolute;
+	top: 35%;
+	left: 10%;
+	font-size: 16px;
+	max-width: 200px;
+	color: white;
+	transform: translate(-200%);
+	transition: transform 0.2s;
+}
+
+.team_table td:hover span {
+	transform: translate(0);
+}

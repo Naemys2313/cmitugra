@@ -1,0 +1,16 @@
+.all {
+	width: 890px;
+	margin-top: 0
+}
+
+#active {
+	margin-top: 20px;
+}
+
+#active label{
+	border-radius: 25px;
+	display: inline-block; 
+	width: 20px;
+	height: 20px;
+	background: #bbb;
+}
